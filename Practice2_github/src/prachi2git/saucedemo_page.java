@@ -43,6 +43,7 @@ public class saucedemo_page {
   }
   @Test (priority=1)
   public void homepage() {
+	  driver.navigate().refresh();
 	  driver.findElement(By.xpath("//*[@id='add-to-cart-sauce-labs-backpack']")).click();
 	  driver.findElement(By.xpath("//*[@class=\"shopping_cart_link\"]")).click();
 	  driver.findElement(By.xpath("//*[@id=\"checkout\"]")).click();
